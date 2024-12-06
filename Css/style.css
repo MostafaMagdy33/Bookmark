@@ -1,0 +1,84 @@
+*{
+
+    box-sizing: border-box;
+    font-family: "PT Sans Caption", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(247, 236, 222);
+}
+
+:root{
+    --font-Pacifico: "Pacifico", cursive;; 
+    --font-Righteous:"Righteous", sans-serif; 
+}
+ .sec1 .heading {
+    border-bottom: 3px solid black;
+    border-bottom-style: dotted;
+ }
+.font-Pacifico {
+    font-family: var(--font-Pacifico);
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+}
+
+.font-Pacifico::before{
+content: "";
+position: absolute;
+height: 40%;
+width: 100%;
+bottom: 0;
+left: 0;
+background-color: rgb(254, 194, 96);
+z-index: -1;
+transition: all 1s ease-in-out;
+}
+
+.font-Pacifico:hover:before{
+    height: 70%;
+}
+
+.font-Righteous  {
+    font-size: 25px;
+    font-family: var(--font-Righteous);  
+    background: linear-gradient(127deg, rgba(60,165,92,1) 0%, rgba(253,187,45,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .form-control:focus{
+        box-shadow: 0 0 0 .25rem #fec26055;
+    }
+
+ .sec1 .btns {
+        border-bottom: 3px solid black;
+        border-bottom-style: dotted;
+  }
+
+  .btn-visit{
+    background-color:#9eb23b;
+  color: white;
+  border: #8a9e23;
+  }
+ .btn-visit:hover{
+    background-color: #8a9e23;
+    color: white;
+ }
+.sec3{
+    background-color: rgba(00,00,00,0.56);
+}
+.sec3 .error {
+    width: 30%;
+    height: 35%;
+}
+.sec3 .error .icon .rounded-circle {
+    width: 20px;
+    height: 20px;
+    list-style: none;
+}
+.sec3 .error  .fa-xmark {
+    cursor: pointer;
+    
+}

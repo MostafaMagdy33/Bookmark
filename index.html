@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookmarker</title>
+<!-- font-family: "PT Sans Caption", sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<!-- font-family: "Righteous", sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<!-- font-family: "Pacifico", cursive; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Css/all.min.css">
+<!-- link bootstrap.css -->
+<link rel="stylesheet" href="Css/bootstrap.min.css">
+<!-- link style sheet -->
+<link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    
+<section class="sec1 container">
+    <div class="heading d-flex justify-content-center pb-5" >
+        <h1 class="font-Pacifico  position-relative  my-5 ">Bookmarker</h1>
+    </div>
+    
+<div class=" row  g-2">
+<div class="col-md-12">
+    <div class="py-3 text-center">
+       
+      <h2 class=" font-Righteous ">
+        <i class="fas fa-bookmark"></i>
+        Bookmark your favorite sites
+        <i class="fas fa-bookmark"></i>
+      </h2>
+    </div>
+</div>
+
+
+<div class="col-md-12 ">
+<div class="">
+   <label class="pb-2 fw-bold " for="nameInpt"><i class="fas fa-book-bookmark pe-1"></i> Site Name</label>
+
+   <input class="w-100 form-control " id="nameInpt" type="text" placeholder="Bookmark Name" name="bName">
+
+
+   <label class="mt-5 pb-2 fw-bold  " for="urlInpt"><i class="fas fa-link pe-1"></i> Site URL</label>
+
+   <input class="w-100  form-control " id="urlInpt" name="url" type="url" placeholder="Website URL">
+
+
+
+   
+<div class="btns text-center py-3"> 
+  <button class="btn btn-danger px-5" id="btnSubmit" type="submit">Submit</button>
+
+</div>
+  
+</div>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<section class="sec2 container">
+<div class="row">
+<div class="col-md-12">
+
+  <table  class="table table-light w-100 text-center mt-3" >
+
+    <thead>
+      <tr>
+        <th >Index</th>
+        <th >Website Name</th>
+        <th >Visit</th>
+        <th >Delete</th>
+      </tr>
+ 
+    </thead>
+    <tbody id="tableSubmit">
+      <!--  -->
+  
+    </tbody>
+ 
+  
+  
+  </table>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="errorsec" class="sec3 d-none position-absolute start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center">
+
+
+  <div class="error shadow-lg bg-white rounded-1 px-4 py-3 ">
+    <div class="d-flex justify-content-between">
+     <div class="icon d-flex pt-3 ">
+       <li class="rounded-circle bg-danger me-2"></li>
+       <li class="rounded-circle bg-warning me-2"></li>
+       <li class="rounded-circle bg-success"></li>
+     </div>
+     <div>
+       <i id="closeBtn" class="fas fa-xmark pt-3 fs-4 "></i>
+     </div>
+    </div>
+   <h5 class="fw-bold pt-3 ">Site Name or Url is not valid, Please follow the rules below :</h5>
+   <p class="fs-5"><i class="fas fa-circle-right text-danger fa-sm me-2"></i>Site name must contain at least 3 characters
+   </p>
+   <p class="fs-5"><i class="fas fa-circle-right text-danger fa-sm  me-2"></i>Site URL must be a valid one
+   </p>
+     </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- link bootstrap.js -->
+<script src="Js/bootstrap.bundle.min.js"></script>
+
+<script src="Js/main.js"></script>
+</body>
+</html>
